@@ -1,0 +1,48 @@
+{
+  "user": [
+    {
+      "id": "29ec",
+      "username": "aman",
+      "email": "aman2@gmail.com",
+      "password": "aman123"
+    }
+  ],
+  "hgsTypes": [
+    {
+      "name": "AMANDEEP VIR",
+      "hgstypes": "messes",
+      "room": "10",
+      "course": "mca",
+      "mobile": "8725971078",
+      "description": "food quality",
+      "id": "d2c7"
+    },
+    {
+      "name": "Vishal Saxena",
+      "hgstypes": "room",
+      "room": "1500",
+      "course": "beds",
+      "mobile": "5568989888",
+      "description": "room window is broken",
+      "id": "8b22"
+    },
+    {
+      "id": "d5c2",
+      "name": "Rakesh",
+      "hgstypes": "Rooms",
+      "room": "44",
+      "course": "Msc Physics",
+      "mobile": "5784964123",
+      "description": "Almirah is broken"
+    },
+    {
+      "id": "639d",
+      "name": "Rama",
+      "hgstypes": "Mess",
+      "room": "78",
+      "course": "Commerce",
+      "mobile": "5414785223",
+      "description": "Mess is need to be clean"
+    }
+  ]
+}
