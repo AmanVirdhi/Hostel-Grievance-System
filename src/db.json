@@ -5,6 +5,24 @@
       "username": "aman",
       "email": "aman2@gmail.com",
       "password": "aman123"
+    },
+    {
+      "id": "1d3d",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "2ef8",
+      "username": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "f7cd",
+      "username": "Pradeep kumar",
+      "email": "pradeep@gmail.com",
+      "password": "pradeep123"
     }
   ],
   "hgsTypes": [
@@ -43,6 +61,60 @@
       "course": "Commerce",
       "mobile": "5414785223",
       "description": "Mess is need to be clean"
+    },
+    {
+      "name": "Mohit",
+      "hgstypes": "library",
+      "room": "50",
+      "course": "UPSC",
+      "mobile": "8754125785",
+      "description": "certain foreigner books not available like math, sociology",
+      "id": "495f"
+    },
+    {
+      "id": "6e1e",
+      "name": "Shama",
+      "hgstypes": "room",
+      "room": "145",
+      "course": "msc Comp Sci",
+      "mobile": "4875954123",
+      "description": "bed is broken"
+    },
+    {
+      "id": "01d6",
+      "name": "Visha \t\t",
+      "hgstypes": "room",
+      "room": "1505",
+      "course": "btech",
+      "mobile": "5568989887",
+      "description": "room chair is broken"
+    },
+    {
+      "id": "1ba2",
+      "name": "RAKA",
+      "hgstypes": "LOBBY",
+      "room": "755",
+      "course": "MTECH",
+      "mobile": "7485416574",
+      "description": "NOT Clean lobby"
+    },
+    {
+      "name": "Alok Kumar",
+      "hgstypes": "cleaniness",
+      "room": "13",
+      "course": "mca 2 year",
+      "mobile": "1475823692",
+      "description": "clean my room",
+      "id": "b880"
+    },
+    {
+      "name": "Pradeep Kumar",
+      "hgstypes": "mess",
+      "room": "113",
+      "course": "btech",
+      "mobile": "4785945123",
+      "description": "mess is not clean",
+      "id": "902a"
     }
   ]
 }
