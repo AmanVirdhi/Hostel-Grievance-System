@@ -8,11 +8,7 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class UserService {
-<<<<<<< HEAD
   
-=======
-
->>>>>>> 5019bc5 (changes)
   isUserLoggedIn= new BehaviorSubject<boolean>(false);
   isLoginError= new EventEmitter<boolean>(false)
   constructor(private http:HttpClient, private router:Router) { }
