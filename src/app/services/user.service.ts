@@ -14,7 +14,7 @@ export class UserService {
   constructor(private http:HttpClient, private router:Router) { }
 
   userSignUp(data:signUp){
-    return this.http.post('http://localhost:3000/user', data, { observe: 'response' });
+    return this.http.post('https://amanvirdhi.github.io/HGS-APIs/db.json', data, { observe: 'response' });
   } 
 
   reloadUser(){
@@ -24,17 +24,27 @@ export class UserService {
     }
   }
 
-  userLogin(data:login){
-    this.http.get(`http://localhost:3000/user?email=${data.email}&password=${data.password}`,
-    {observe:'response'}).subscribe((result:any)=>{
-     if(result && result.body && result.body.length===1){
-       this.isLoginError.emit(false)
-       localStorage.setItem('user',JSON.stringify(result.body))
-       this.router.navigate(['home'])
-     }else{
-       this.isLoginError.emit(true)
-     }
-    })
-   }
+  userLogin(data: login) {
+    this.http.get('https://amanvirdhi.github.io/HGS-APIs/db.json', { observe: 'response' })
+      .subscribe((result: any) => {
+        if (result && result.body && result.body.user) {
+          const users = result.body.user;
+          const foundUser = users.find((user: any) => 
+            user.email === data.email && user.password === data.password
+          );
+          
+          if (foundUser) {
+            this.isLoginError.emit(false);
+            localStorage.setItem('user', JSON.stringify(foundUser));
+            this.router.navigate(['home']);
+          } else {
+            this.isLoginError.emit(true);
+          }
+        } else {
+          this.isLoginError.emit(true);
+        }
+      });
+  }
+  
 
 }

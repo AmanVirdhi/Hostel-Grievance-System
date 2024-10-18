@@ -43,7 +43,7 @@ import { MatSortModule } from '@angular/material/sort';
     HGSMenuComponent,
     HgsTypesComponent,
     GrievanceListComponent,
-    EditComponent
+    EditComponent,
   ],
   imports: [
     BrowserModule,
@@ -73,7 +73,8 @@ import { MatSortModule } from '@angular/material/sort';
     MatIconModule,
     MatTableModule, 
     MatSortModule, 
-    MatPaginatorModule
+    MatPaginatorModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,29 +11,29 @@ export class TypesService {
   constructor(private http:HttpClient) { }
 
   addGrievance(data:hgsTypes){
-    return this.http.post('http://localhost:3000/hgsTypes', data);
+    return this.http.post('https://amanvirdhi.github.io/HGS-APIs/db.json', data);
   }
 
   // GrievanceList(){
   //   return this.http.get<hgsTypes>('http://localhost:3000/hgsTypes');
   // }
   GrievanceList(): Observable<hgsTypes[]> {
-    return this.http.get<hgsTypes[]>('http://localhost:3000/hgsTypes');
+    return this.http.get<hgsTypes[]>('https://amanvirdhi.github.io/HGS-APIs/db.json');
   }
 
   deleteUser(id: string){
-    return this.http.delete(`http://localhost:3000/hgsTypes/${id}`);
+    return this.http.delete(`https://amanvirdhi.github.io/HGS-APIs/db.json/${id}`);
   }
 
   getUser(id: string) {
-    return this.http.get<hgsTypes>(`http://localhost:3000/hgsTypes/${id}`);
+    return this.http.get<hgsTypes>(`https://amanvirdhi.github.io/HGS-APIs/db.json/${id}`);
   }
 
   // updateGrievance(id: string) {
   //   return this.http.get<hgsTypes>(`http://localhost:3000/hgsTypes/${id}`);
   // }
   updateGrievance(product: hgsTypes) {
-    return this.http.put<hgsTypes>(`http://localhost:3000/hgsTypes/${product.id}`,product);
+    return this.http.put<hgsTypes>(`https://amanvirdhi.github.io/HGS-APIs/db.json/${product.id}`,product);
   }
 
 }
